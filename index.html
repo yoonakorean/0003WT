@@ -200,7 +200,7 @@ submitBtn.addEventListener("click",()=>{
   const formData=new FormData();
   formData.append("entry.1082970818",nickname);
   formData.append("entry.851626887",finalScore);
-  formData.append("entry.498226528",elapsedSeconds); // 回傳花費秒數
+  formData.append("entry.498226528",elapsedSeconds + " 秒"); // 回傳花費秒數
   formData.append("entry.532888754",weekday);
   formData.append("entry.1110600272",gameTitleText);
   fetch(formURL,{method:"POST",body:formData,mode:"no-cors"})
